@@ -13,10 +13,14 @@ let $speechInput,
   messageInternalError = "Oh no, there has been an internal server error",
   messageSorry = "I'm sorry, I don't have the answer to that yet.";
 
+staticWelcomeMessage1 = "Hello! I'm Theseus! Ask me indication for PoliTO classroom and lab."
+staticWelcomeMessage2 = "You can start with something like 'Where is ... ' "
 
 $(document).ready(function() {
   $speechInput = $("#userquery");
   $recBtn = $("#rec");
+  createBubbleChat(staticWelcomeMessage1,'other')
+  createBubbleChat(staticWelcomeMessage2,'other')
 
   // get the text inserted by the user and process it
   $speechInput.keypress((event) => {
