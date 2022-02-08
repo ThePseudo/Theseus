@@ -156,3 +156,8 @@ function createBubbleChat(val, type){
   $(".chat").append('<li class="'+type+'"><div class="msg"><p>'+val+'</p></div></li>');
   window.scrollTo(0,document.body.scrollHeight);
 }
+
+function createBubbleChat1(val, type) {
+  $(".chat").append('<li class="' + type + '"><div class="msg"><p>' + val + '</p></div></li>');
+  window.scrollTo(0, document.body.scrollHeight);
+}
